@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" *ngIf='userAuth1'>
+  <a class="navbar-brand font-bold" href="#" >{{title}} DevConnector</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto mr-5">
+        <!-- <li class="nav-item active ">
+          <a class="nav-link " routerLink="userData">UserData</a>
+        </li> -->
+      <li class="nav-item active ">
+        <a class="nav-link" routerLink="developer">Developers</a>
+      </li>
+      <li class="nav-item active ">
+        <a class="nav-link" routerLink='signup'>Register</a>
+      </li>
+      <li class="nav-item active ">
+        <a class="nav-link " routerLink="login">Login</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" *ngIf='userAuth2'>
+  <a class="navbar-brand font-bold" href="#" >{{title}} DevConnector</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto mr-5">
+        <!-- <li class="nav-item active ">
+          <a class="nav-link " routerLink="userData">UserData</a>
+        </li> -->
+      <li class="nav-item active ">
+        <a class="nav-link" routerLink="developer">Developers</a>
+      </li>
+      <li class="nav-item active ">
+        <a class="nav-link" routerLink='posts'>Posts</a>
+      </li>
+      <li class="nav-item active ">
+        <a class="nav-link" routerLink='dashboard-menu'>Dashboard</a>
+      </li>
+      <li class="nav-item active ">
+        <a class="nav-link" routerLink='logout' (click)='logoutUser()'>Logout</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>

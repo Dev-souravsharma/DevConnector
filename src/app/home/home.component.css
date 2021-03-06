@@ -1,0 +1,29 @@
+.imageFix{
+  position: relative;
+  float: right;
+  top: 150px;
+  right: 200px;
+}
+.centerText{
+  position: relative;
+  top: 320px;
+  left: 350px;
+}
+.centerSorv{
+  position: relative;
+  top: 280px;
+  left: 250px;
+  width: 800px;
+}
+.centerbutton{
+  position: relative;
+  top: 300px;
+  left: 500px;
+}
+h4{
+  font-size: 21px;
+}
+.largebutton{
+  width: 100px;
+}
+

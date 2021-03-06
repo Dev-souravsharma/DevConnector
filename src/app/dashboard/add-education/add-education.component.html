@@ -1,0 +1,54 @@
+<div class="background">
+  <mat-card class="card">
+  <mat-toolbar class="bg-dark text-white">Add your Education</mat-toolbar>
+  <br>
+<div class="marginSide">
+  <hr>
+  <h3><mat-icon>school</mat-icon> Add any school, bootcamp, etc that you have attended </h3>
+  <hr>
+  <!-- Form -->
+
+  <form>
+
+    <mat-form-field appearance="outline">
+      <mat-label>School or Bootcamp</mat-label>
+      <input matInput placeholder="eg. Sebiz" required>
+    </mat-form-field>
+    <!-- <input type="text" class="form-control" placeholder="Job Title*" required> -->
+    <!-- <input type="text" class="form-control" placeholder="Company*" required> -->
+    <mat-form-field appearance="outline">
+      <mat-label>Degree or certificate</mat-label>
+      <input matInput placeholder="eg. B.tech." required>
+    </mat-form-field>
+    <!-- <input type="text" class="form-control" placeholder="Location*"> -->
+
+    <mat-form-field appearance="outline">
+      <mat-label>From Date</mat-label>
+      <input matInput [matDatepicker]="picker1" placeholder="mm-dd-yyyy">
+      <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+      <mat-datepicker #picker1></mat-datepicker>
+    </mat-form-field>
+    <br>
+    <mat-checkbox>
+      Current School or Bootcamp
+    </mat-checkbox>
+    <br>
+    <mat-form-field appearance="outline">
+      <mat-label>To Date</mat-label>
+      <input matInput [matDatepicker]="picker2" placeholder="mm-dd-yyyy">
+      <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+      <mat-datepicker #picker2></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Program Description</mat-label>
+      <textarea matInput required></textarea>
+    </mat-form-field>
+    <br>
+    <button type="submit" mat-raised-button color="primary">Submit</button>
+    <button type="submit" mat-raised-button class="bColor" (click)='back()'>Go Back </button>
+  </form>
+
+</div>
+<br>
+</mat-card>
+</div>

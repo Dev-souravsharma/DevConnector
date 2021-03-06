@@ -1,0 +1,45 @@
+<div class="mybackground">
+  <div class="top-padding">
+<mat-card>
+  <mat-toolbar class="bg-dark whiteColor">Login</mat-toolbar>
+  <br><br>
+  <div class="login-icon">
+    <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+    <h3>Login into your account</h3>
+  </div>
+
+  <form #regForm='ngForm' (ngSubmit)='onSubmit(regForm)'>
+    <div class="text-center">
+    <mat-form-field appearance="outline">
+      <mat-label >Email</mat-label>
+      <input
+      matInput
+      placeholder="example@abc.com"
+      type="email"
+      required
+      email
+      #email='ngModel'
+      name="userEmail"
+      ngModel>
+      <mat-error *ngIf="email.invalid && email.touched">Enter valid email</mat-error>
+    </mat-form-field>
+
+  </div>
+  <div class="text-center">
+    <mat-form-field appearance="outline" >
+      <mat-label >password</mat-label>
+      <input matInput placeholder="**********" type="password" required name="userName" minlength="6" #pass='ngModel' ngModel>
+      <mat-error *ngIf="pass.invalid">Enter valid password</mat-error>
+    </mat-form-field>
+  </div>
+  <div class="checkboxwidth">
+    <mat-checkbox class="example-margin">Remember me</mat-checkbox>
+  </div>
+  <div class="text-center">
+    <button mat-raised-button color="primary" type="submit" [disabled]="!regForm.valid" routerLink='/dashboard-menu'>LogIn</button>
+  </div>
+  </form>
+  <br><br>
+</mat-card>
+</div>
+</div>

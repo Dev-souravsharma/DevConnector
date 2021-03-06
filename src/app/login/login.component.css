@@ -1,0 +1,38 @@
+mat-card{
+  width: 70%;
+  height: 70%;
+  margin: auto;
+
+}
+.top-padding{
+  padding-top: 20px;
+}
+mat-form-field{
+  width: 70%;
+}
+button{
+  width: 20%;
+}
+mat-checkbox{
+  margin: auto;
+}
+.checkboxwidth{
+  width: 70%;
+  margin: auto;
+}
+input.ng-invalid.ngtouched{
+    border-color: yellow;
+}
+.mybackground{
+  background-color: #e5e5e5;
+  height: 100vh;
+}
+.login-icon{
+  width: 70%;
+  margin: auto;
+  display: flex;
+
+}
+.whiteColor{
+  color: white;
+}

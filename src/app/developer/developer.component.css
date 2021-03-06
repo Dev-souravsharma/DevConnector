@@ -1,0 +1,24 @@
+.card{
+  width: 70%;
+  margin: auto;
+
+}
+.textWhite{
+  color: white;
+}
+.developer-icon{
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+.textCenter{
+  text-align: center;
+  font-weight: bold;
+}
+.background{
+  background-color: #e5e5e5;
+  height: 100%;
+}
+.top-margin{
+  padding-top: 20px;
+}

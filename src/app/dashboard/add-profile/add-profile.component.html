@@ -1,0 +1,55 @@
+<div class="background">
+  <mat-card class="card">
+  <mat-toolbar class="bg-dark text-white">Create your profile</mat-toolbar>
+  <br>
+<div class="marginSide">
+  <hr>
+  <h3><mat-icon>edit_road</mat-icon> Let's get some information to make your profile stand out </h3>
+  <hr>
+  <!-- Form -->
+
+  <form>
+    <mat-form-field appearance="outline">
+      <mat-label>Select me</mat-label>
+      <mat-select>
+        <mat-option value="option">Developer</mat-option>
+        <mat-option value="option">Junior Developer</mat-option>
+        <mat-option value="option">Senior Developer</mat-option>
+        <mat-option value="option">Manager</mat-option>
+        <mat-option value="option">Student</mat-option>
+        <mat-option value="option">Other</mat-option>
+
+
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Company</mat-label>
+      <input matInput placeholder="eg. Netsmartz" required>
+      <mat-hint>could be your own company or one you work for</mat-hint>
+    </mat-form-field>
+    <!-- <input type="text" class="form-control" placeholder="Job Title*" required> -->
+    <!-- <input type="text" class="form-control" placeholder="Company*" required> -->
+    <mat-form-field appearance="outline">
+      <mat-label>Website</mat-label>
+      <input matInput placeholder="eg. https://devconnector.com" required>
+      <mat-hint>Could be your own or a company website</mat-hint>
+    </mat-form-field>
+    <!-- <input type="text" class="form-control" placeholder="Location*"> -->
+    <mat-form-field appearance="outline">
+      <mat-label>Location</mat-label>
+      <input matInput placeholder="eg. Chandigarh" required>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="outline">
+      <mat-label>Job Description</mat-label>
+      <textarea matInput required></textarea>
+    </mat-form-field>
+    <br>
+    <button type="submit" mat-raised-button color="primary">Submit</button>
+    <button type="submit" mat-raised-button class="bColor" (click)="back()">Go Back </button>
+  </form>
+
+</div>
+<br>
+</mat-card>
+</div>

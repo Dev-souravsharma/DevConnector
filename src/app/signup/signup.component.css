@@ -1,0 +1,30 @@
+mat-card{
+    width: 70%;
+    height: auto;
+    margin: auto;
+
+}
+.top-padding{
+  padding-top: 20px;
+}
+.my-container{
+  height: 100vh;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+mat-form-field{
+  width: 80%;
+  margin: auto;
+}
+.signup-icon{
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+.already-account{
+  width: 80%;
+  margin: auto;
+}
+button{
+  width: 20%;
+}

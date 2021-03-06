@@ -1,0 +1,44 @@
+<div class="background">
+<mat-card class="card">
+<mat-toolbar class="bg-dark text-white">DashBoard</mat-toolbar>
+<br>
+<div class="marginSide">
+<h1>Welcome Guest</h1>
+<div class="flex">
+  <button mat-raised-button (click)='editProfile()'><mat-icon >edit</mat-icon> Edit-Profile</button>
+  <button mat-raised-button (click)='addEducation()'><mat-icon>school</mat-icon> Add Education</button>
+  <button mat-raised-button  (click)='addExperience()'><mat-icon>support_agent</mat-icon> Add Experience</button>
+</div>
+<hr>
+<h1>Experience Credentials</h1>
+<hr>
+
+<table>
+  <tr>
+    <th >Company</th>
+    <th>Titles</th>
+    <th>Year</th>
+  </tr>
+  <!-- <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr> -->
+</table>
+<hr>
+<h1>Education Credentials</h1>
+<hr>
+<table>
+  <tr>
+    <th >School</th>
+    <th>Years</th>
+    <th>Degree</th>
+  </tr>
+</table>
+<br>
+<hr>
+<button mat-raised-button color='warn' ><mat-icon>delete_sweep</mat-icon>Delete my account</button>
+</div>
+<br>
+</mat-card>
+</div>

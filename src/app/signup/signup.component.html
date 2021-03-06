@@ -1,0 +1,66 @@
+<div class="my-container">
+  <br>
+<mat-card>
+  <mat-toolbar class="bg-dark">
+    <h1 style="color: white;">SignUp</h1>
+  </mat-toolbar>
+  <br><br>
+  <div class="signup-icon">
+    <mat-icon aria-hidden="false" aria-label="Example home icon">person</mat-icon>
+    <h3>Create your account</h3>
+  </div>
+  <div class="text-center">
+    <!-- Form  -->
+<form [formGroup]="userdata" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="outline">
+      <mat-label >Email</mat-label>
+      <input
+      matInput
+      placeho lder="example@abc.com"
+      type="email"
+      formControlName="email"
+
+      >
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="outline">
+      <mat-label >name</mat-label>
+      <input
+      matInput
+      placeholder="eg.Sourav Sharma"
+      formControlName="username"
+      >
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="outline">
+      <mat-label >password</mat-label>
+      <input
+      matInput
+      placeholder="***********"
+      type="password"
+      formControlName="password"
+      >
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="outline">
+      <mat-label >confirm-password</mat-label>
+      <input
+      matInput
+      placeholder="***********"
+
+     formControlName="confirmPassword"
+      >
+    </mat-form-field>
+    <br>
+    <button mat-raised-button color='primary'  type='submit'>Sign in</button>
+    <br><br>
+    <p>Already Have an account? <a routerLink="/login">Login</a></p>
+</form>
+
+<br>
+</div>
+</mat-card>
+</div>
+<br><br>
+
+<router-outlet></router-outlet>

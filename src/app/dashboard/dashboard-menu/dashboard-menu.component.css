@@ -1,0 +1,39 @@
+.background{
+  background-color: #e5e5e5;
+  height: 100vh;
+  overflow: hidden;
+  padding-top: 20px;
+}
+.card{
+  margin: auto;
+  width: 80%;
+
+}
+.text-white{
+  color: white;
+}
+.marginSide{
+  margin-left: 30px;
+
+}
+.flex{
+  display:inline-block;
+
+}
+button{
+  margin: 10px;
+  background-color: #e5e5e5;
+
+}
+h1{
+  font-weight: bold;
+}
+table{
+  width: 50%;
+  font-size: medium;
+}
+th{
+  height: 30px;
+  padding-left: 10px;
+  background-color: #e5e5e5;
+}
